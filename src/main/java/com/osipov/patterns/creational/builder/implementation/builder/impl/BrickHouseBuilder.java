@@ -8,17 +8,17 @@ public class BrickHouseBuilder implements HouseBuilder {
 
     @Override
     public void buildFoundation() {
-        house.setFoundation("Concrete foundation");
+        house.setFoundation("Бетонный фундамент");
     }
 
     @Override
     public void buildRoof() {
-        house.setRoof("Brick roof");
+        house.setRoof("Кирпичная крыша");
     }
 
     @Override
     public void buildWalls() {
-        house.setWalls("Concrete walls");
+        house.setWalls("Бетонные стены");
     }
 
     @Override

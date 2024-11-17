@@ -8,16 +8,16 @@ import com.osipov.patterns.creational.builder.implementation.product.House;
 
 public class Main {
     public static void main(String[] args) {
-        HouseBuilder woodenHouseBuilder = new WoodenHouseBuilder();
-        HouseDirector director = new HouseDirector(woodenHouseBuilder);
+        HouseBuilder woodenBuilder = new WoodenHouseBuilder();
+        HouseDirector director = new HouseDirector(woodenBuilder);
         director.constructHouse();
-        House woodemHouse = director.getHouse();
-        System.out.println("Built: " + woodemHouse);
+        House woodenHouse = director.getHouse();
+        System.out.println("Построено: " + woodenHouse);
 
         HouseBuilder brickBuilder = new BrickHouseBuilder();
         director = new HouseDirector(brickBuilder);
         director.constructHouse();
         House brickHouse = director.getHouse();
-        System.out.println("Built: " + brickHouse);
+        System.out.println("Построено: " + brickHouse);
     }
 }

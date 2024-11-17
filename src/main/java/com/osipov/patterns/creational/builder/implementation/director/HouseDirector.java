@@ -19,7 +19,7 @@ public class HouseDirector {
     public House getHouse() {
         var house = builder.getResult();
         if (!checkHouse(house)) {
-            throw new IllegalStateException("House construction is incomplete");
+            throw new IllegalStateException("Строительство дома не завершено");
         }
         return house;
     }

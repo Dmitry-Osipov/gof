@@ -21,6 +21,6 @@ public class Main {
 
         Stream.of(pants, shoes, tops)
                 .flatMap(List::stream)
-                .forEach(clothing -> System.out.println(clothing.getDescription()));
+                .forEach(clothing -> System.out.println(clothing.description()));
     }
 }

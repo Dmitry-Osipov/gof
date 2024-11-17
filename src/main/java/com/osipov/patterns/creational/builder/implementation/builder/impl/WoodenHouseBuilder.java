@@ -8,17 +8,17 @@ public class WoodenHouseBuilder implements HouseBuilder {
 
     @Override
     public void buildFoundation() {
-        house.setFoundation("Wooden foundation");
+        house.setFoundation("Деревянный фундамент");
     }
 
     @Override
     public void buildRoof() {
-        house.setRoof("Wooden roof");
+        house.setRoof("Деревянная крыша");
     }
 
     @Override
     public void buildWalls() {
-        house.setWalls("Wooden walls");
+        house.setWalls("Деревянные стены");
     }
 
     @Override

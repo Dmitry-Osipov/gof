@@ -12,16 +12,16 @@ public class WinterClothingFactory implements ClothingFactory {
 
     @Override
     public Pants createPants() {
-        return new Jeans();
+        return new Jeans("Чёрные утеплённые джинсы");
     }
 
     @Override
     public Shoes createShoes() {
-        return new Boots();
+        return new Boots("Утеплённые коричневые ботинки для походов");
     }
 
     @Override
     public Top createTop() {
-        return new Sweatshirt();
+        return new Sweatshirt("Жёлтая толстовка с капюшоном");
     }
 }

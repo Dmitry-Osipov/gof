@@ -2,11 +2,5 @@ package com.osipov.patterns.creational.abstract_factory.implementation.clothing.
 
 import com.osipov.patterns.creational.abstract_factory.implementation.clothing.Top;
 
-public class Sweatshirt implements Top {
-    private static final String DESCRIPTION = "Жёлтая толстовка с капюшоном";
-
-    @Override
-    public String getDescription() {
-        return DESCRIPTION;
-    }
+public record Sweatshirt(String description) implements Top {
 }

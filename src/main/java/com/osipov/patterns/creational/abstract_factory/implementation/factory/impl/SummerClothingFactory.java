@@ -12,16 +12,16 @@ public class SummerClothingFactory implements ClothingFactory {
 
     @Override
     public Pants createPants() {
-        return new Breeches();
+        return new Breeches("Лёгкие бриджи цвета хаки");
     }
 
     @Override
     public Shoes createShoes() {
-        return new FlipFlops();
+        return new FlipFlops("Чёрные шлёпанцы с местного рынка");
     }
 
     @Override
     public Top createTop() {
-        return new TShirt();
+        return new TShirt("Белая футболка без рукавов");
     }
 }
